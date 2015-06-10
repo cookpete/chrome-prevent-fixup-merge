@@ -4,6 +4,7 @@
   "version": "0.1",
   "author": "Pete Cook",
   "description": "Prevents merging pull requests with pending fixup commits",
+  "icons": { "128": "icon.png" },
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*/pull/*"],
