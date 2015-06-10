@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Prevent GitHub Fixup Merge",
+  "version": "0.1",
+  "author": "Pete Cook",
+  "description": "Prevents merging pull requests with pending fixup commits",
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*/pull/*"],
+      "js": ["plugin.js"]
+    }
+  ]
+}
