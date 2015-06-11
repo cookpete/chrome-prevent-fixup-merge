@@ -1,7 +1,7 @@
 var nodes = document.querySelectorAll('.commit-message .message');
 
 for(var i = 0, l = nodes.length; i !== l; i++){
-  if(/^fixup!/.test(nodes[i].innerText)) {
+  if(/^(fixup|squash|wip|tmp)!/.test(nodes[i].innerText)) {
     var button = document.querySelector('.merge-branch-action');
     button.setAttribute('disabled', 'disabled');
     button.classList.remove('btn-primary');
