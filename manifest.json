@@ -7,7 +7,7 @@
   "icons": { "128": "icon.png" },
   "content_scripts": [
     {
-      "matches": ["*://*.github.com/*/pull/*"],
+      "matches": ["*://*.github.com/*"],
       "js": ["plugin.js"]
     }
   ]
