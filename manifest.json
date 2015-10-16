@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Prevent GitHub Fixup Merge",
-  "version": "0.2",
+  "version": "0.3",
   "author": "Pete Cook",
-  "description": "Prevents merging pull requests with pending fixup commits",
+  "description": "Prevents merging pull requests with pending fixup or temporary commits",
   "icons": { "128": "icon.png" },
   "content_scripts": [
     {
