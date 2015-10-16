@@ -1,7 +1,7 @@
 window.addEventListener('click', function(e){
   var node = e.target;
   while(node){
-    if(node.classList && node.classList.contains('merge-branch-action') && hasFixups()) {
+    if(/merge/i.test(node.innerText) && hasFixups()) {
       alert('Warning: You still have fixup commits');
       break;
     }
