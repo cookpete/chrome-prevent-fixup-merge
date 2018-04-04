@@ -1,7 +1,12 @@
 window.addEventListener('click', function(e){
   var node = e.target;
   while(node){
-    if(node.getAttribute('type') === 'button' && /merge/i.test(node.innerText) && hasFixups()) {
+    if (
+      node.classList &&
+      node.classList.contains('btn-primary') &&
+      /merge/i.test(node.innerText) &&
+      hasFixups()
+    ) {
       alert('Warning: You still have fixup commits');
       break;
     }
