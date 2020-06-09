@@ -15,7 +15,7 @@ window.addEventListener('click', function(e){
 });
 
 function hasFixups(){
-  var nodes = document.querySelectorAll('.commit-message .message');
+  var nodes = document.querySelectorAll('.commit-message code');
   for(var i = 0, l = nodes.length; i !== l; i++){
     if(/^(fixup|squash|wip|tmp)!/.test(nodes[i].innerText)) {
       return true;
